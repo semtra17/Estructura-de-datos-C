@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1651357527 source:e:\luciano\facultad\algoritmos y estructuras\arboles\main.cpp
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<string.h>
+	<sstream>
+	"ArbolBinario.h"
+
+1651356902 e:\luciano\facultad\algoritmos y estructuras\arboles\arbolbinario.h
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<string.h>
+	<sstream>
+
+1650500983 source:e:\luciano\facultad\algoritmos y estructuras\arboles\arbolbinario.c
+
+1651359187 source:e:\luciano\facultad\algoritmos y estructuras\arboles\arbolbinario.cpp
+	"ArbolBinario.h"
+
