@@ -19,3 +19,34 @@
 1651359187 source:e:\luciano\facultad\algoritmos y estructuras\arboles\arbolbinario.cpp
 	"ArbolBinario.h"
 
+1656974457 source:c:\users\lassefh\desktop\data_structures\arbolbinario.cpp
+	"ArbolBinario.h"
+
+1656974457 c:\users\lassefh\desktop\data_structures\arbolbinario.h
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<string.h>
+	<sstream>
+
+1656981709 source:c:\users\lassefh\desktop\data_structures\pila.cpp
+	"Pila.h"
+	<iostream>
+
+1656981703 c:\users\lassefh\desktop\data_structures\pila.h
+
+1656981716 source:c:\users\lassefh\desktop\data_structures\main.cpp
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<string.h>
+	<sstream>
+	"ArbolBinario.h"
+	"Pila.h"
+
+1656983149 source:c:\users\lassefh\desktop\data_structures\cola.cpp
+	<iostream>
+	"Cola.h"
+
+1656983061 c:\users\lassefh\desktop\data_structures\cola.h
+

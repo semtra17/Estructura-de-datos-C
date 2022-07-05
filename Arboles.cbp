@@ -34,7 +34,11 @@
 		</Compiler>
 		<Unit filename="ArbolBinario.cpp" />
 		<Unit filename="ArbolBinario.h" />
+		<Unit filename="Cola.cpp" />
+		<Unit filename="Cola.h" />
 		<Unit filename="ListaDobleEnl.h" />
+		<Unit filename="Pila.cpp" />
+		<Unit filename="Pila.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
