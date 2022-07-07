@@ -1,35 +1,46 @@
 #include <iostream>
 #include "Cola.h"
+#include <iostream>
+using namespace std;
 
 
 
+Cola * crearCola(){
+    Cola * cola = new Cola();
+    cola->fin=NULL;
+    cola->frente=NULL;
+}
 
-void encolar(NodoCola*& frente,NodoCola*& fin , void* n){
+void encolar(Cola*& cola, void* n){
     NodoCola* nuevo_nodo = new NodoCola();
     nuevo_nodo->dato= n;
     nuevo_nodo->nextNode = NULL;
-    if(cola_vacia(frente)){
-        frente = nuevo_nodo;
+
+    if(cola_vacia(cola->frente)){
+        cola->frente = nuevo_nodo;
     }
     else{
-        fin->nextNode=nuevo_nodo;
+        cola->fin->nextNode=nuevo_nodo;
     }
 
-    fin = nuevo_nodo;
+    cola->fin = nuevo_nodo;
+
+    cout << "dato agregado: " << *(int*) n << endl;
 
 };
 
-void desEncolar(NodoCola*& frente,NodoCola*& fin,void* n){
-    n = frente->dato;
-    NodoCola *aux = frente;
+void desEncolar(Cola *&cola){
+    n = cola->frente->dato;
+    NodoCola *aux = cola->frente;
 
-    if(frente == fin){
-        frente = NULL;
-        fin = NULL;
+    if(cola->frente == cola->fin){
+        cola->frente = NULL;
+        cola->fin = NULL;
     }
     else{
-        frente = frente->nextNode;
+        cola->frente = cola->frente->nextNode;
     }
+     cout << "dato eliminado: " << *(int*) aux->dato << endl;
     delete aux;
 
 

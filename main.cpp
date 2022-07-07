@@ -6,22 +6,35 @@
 #include <sstream>
 #include "ArbolBinario.h"
 #include "Pila.h"
+#include "Cola.h"
 
 using namespace std;
 
 int main()
 {
 
-    Nodo *arbolB = NULL;
-    NodoPila * pila = NULL;
-    int n = 3, i =6 , j=5;
-    apilar(pila,&n);
-    apilar(pila,&i);
-    apilar(pila,&j);
-    while(pila != NULL){
-        desapilar(pila,&n);
+//    Nodo *arbolB = NULL;
+//    NodoPila * pila = NULL;
+//    int n = 3, i =6 , j=5;
+//    apilar(pila,&n);
+//    apilar(pila,&i);
+//    apilar(pila,&j);
+//    while(pila != NULL){
+//        desapilar(pila,&n);
+//
+//    }
 
+    Cola *cola = crearCola();
+    int l = 0, x = 3;
+    encolar(cola, &l);
+    encolar(cola, &x);
+
+    while(cola->frente != NULL){
+        desEncolar(cola);
     }
+
+
+
 
 //    int opcion,dato,contador=0;
 //
