@@ -9,6 +9,7 @@ Cola * crearCola(){
     Cola * cola = new Cola();
     cola->fin=NULL;
     cola->frente=NULL;
+    return cola;
 }
 
 void encolar(Cola*& cola, void* n){
@@ -30,6 +31,7 @@ void encolar(Cola*& cola, void* n){
 };
 
 void desEncolar(Cola *&cola){
+    void * n;
     n = cola->frente->dato;
     NodoCola *aux = cola->frente;
 

@@ -7,7 +7,7 @@
 #include <string.h>
 #include <sstream>
 
-typedef struct Nodo{
+struct Nodo{
 	int dato;
 	Nodo *der;
 	Nodo *izq;

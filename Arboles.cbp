@@ -36,7 +36,13 @@
 		<Unit filename="ArbolBinario.h" />
 		<Unit filename="Cola.cpp" />
 		<Unit filename="Cola.h" />
+		<Unit filename="Grafos.cpp" />
+		<Unit filename="Grafos.h" />
+		<Unit filename="Lista.h" />
+		<Unit filename="ListaDobleEnl.cpp" />
 		<Unit filename="ListaDobleEnl.h" />
+		<Unit filename="ListaSimpl.cpp" />
+		<Unit filename="ListaSimpl.h" />
 		<Unit filename="Pila.cpp" />
 		<Unit filename="Pila.h" />
 		<Unit filename="main.cpp" />

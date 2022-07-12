@@ -2,7 +2,6 @@
 #define COLA_H_INCLUDED
 
 
-
 struct NodoCola{
     int index;
     void * dato;
@@ -10,14 +9,14 @@ struct NodoCola{
 };
 
 struct Cola {
-    NodoCola*frente;
-    NodoCola*fin;
+    NodoCola*frente = NULL;
+    NodoCola*fin = NULL;
 };
 
 Cola * crearCola();
-void encolar(Cola*&,void*);
-void desEncolar(Cola*&);
-bool cola_vacia(NodoCola *&);
+void encolar(Cola*& cola,void* n);
+void desEncolar(Cola*& cola);
+bool cola_vacia(NodoCola *& frente);
 
 
 #endif // COLA_H_INCLUDED

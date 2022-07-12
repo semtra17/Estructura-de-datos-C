@@ -53,3 +53,80 @@
 
 1657161566 c:\users\lassefh\desktop\data_structures\cola.h
 
+1657296506 source:c:\users\lasse\desktop\data_structures\arbolbinario.cpp
+	"ArbolBinario.h"
+
+1657462393 c:\users\lasse\desktop\data_structures\arbolbinario.h
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<string.h>
+	<sstream>
+
+1657296506 source:c:\users\lasse\desktop\data_structures\pila.cpp
+	"Pila.h"
+	<iostream>
+
+1657296506 c:\users\lasse\desktop\data_structures\pila.h
+	<iostream>
+
+1657602220 source:c:\users\lasse\desktop\data_structures\main.cpp
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<string.h>
+	<sstream>
+	"ArbolBinario.h"
+	"Pila.h"
+	"Cola.h"
+	"Grafos.h"
+
+1657464232 c:\users\lasse\desktop\data_structures\cola.h
+
+1657464637 source:c:\users\lasse\desktop\data_structures\cola.cpp
+	<iostream>
+	"Cola.h"
+	<iostream>
+
+1657493796 source:c:\users\lasse\desktop\data_structures\lista.cpp
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<string.h>
+	<sstream>
+	"Lista.h"
+
+1657494053 c:\users\lasse\desktop\data_structures\lista.h
+
+1657468161 source:c:\users\lasse\desktop\data_structures\listadobleenl.cpp
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<string.h>
+	<sstream>
+	"ListaDobleEnl.h"
+
+1657468156 c:\users\lasse\desktop\data_structures\listadobleenl.h
+
+1657495914 source:c:\users\lasse\desktop\data_structures\listasimpl.cpp
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<string.h>
+	<sstream>
+	"ListaSimpl.h"
+
+1657603950 source:c:\users\lasse\desktop\data_structures\grafos.cpp
+	"Grafos.h"
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<string.h>
+	<sstream>
+
+1657599950 c:\users\lasse\desktop\data_structures\grafos.h
+	<stdbool.h>
+	"ListaSimpl.h"
+
+1657495672 c:\users\lasse\desktop\data_structures\listasimpl.h
+
