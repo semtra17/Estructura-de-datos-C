@@ -15,13 +15,19 @@ using namespace std;
 
 int main()
 {
-    Graph * graph = crearGraph();
-    addedge(graph, 2, 1);
-    addedge(graph, 2, 4);
-//    addedge(graph, 4, 1);
+//    Graph * graph = crearGraph();
+//    int i = 2, j=1;
+//    addedge(graph, i, j);
+//    j=3;
+//    addedge(graph, i, j);
+//    addedge(graph, 1, 3);
+//    addedge(graph, 1, 5);
+//    addedge(graph, 1, 8);
+//    addedge(graph, 5, 3);
+//    addedge(graph, 5, 2);
+//    addedge(graph, 5, 6);
 //    printGraph(graph);
-
-
+//
 
     //    Nodo *arbolB = NULL;
     //    NodoPila * pila = NULL;
@@ -36,14 +42,14 @@ int main()
 
 
 
-//    Cola *cola = new Cola();
-//    int l = 0, x = 3;
-//    encolar(cola, &l);
-//    encolar(cola, &x);
-//
-//    while (cola->frente != NULL){
-//        desEncolar(cola);
-//    }
+    Cola *cola = new Cola();
+    int l = 0, x = 3;
+    encolar(cola, &l);
+    encolar(cola, &x);
+
+    while (cola->frente != NULL){
+        desEncolar(cola);
+    }
 
 
 

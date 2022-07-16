@@ -44,8 +44,6 @@ void desEncolar(Cola *&cola){
     }
      cout << "dato eliminado: " << *(int*) aux->dato << endl;
     delete aux;
-
-
 };
 
 bool cola_vacia(NodoCola *&frente){

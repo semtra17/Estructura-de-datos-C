@@ -4,6 +4,8 @@
 #include <string.h>
 #include <sstream>
 #include "ListaSimpl.h"
+using namespace std;
+
 
 
 /******************************************************************************/
@@ -49,13 +51,14 @@ void addNodeToList(ListaSimpEnl* list, NodoLista* nodeToAdd){
 }
 
 void addDataToList(ListaSimpEnl* list, void* data){
+//    cout << *(int *)data << endl;
 	NodoLista* node = newNode(data);
     addNodeToList(list, node);
     list->tam++;
 }
 
 /* ===================== DESTRUCTOR =====================*/
-void vaciarListaSimpEnl(ListaSimpEnl * list){
+void vaciarListaSimpEnl(ListaSimpEnl *& list){
     NodoLista * nodo = list->head;
     NodoLista * nextNode = nodo->nextNode;
     while(nodo != NULL){
@@ -73,7 +76,7 @@ void vaciarListaSimpEnl(ListaSimpEnl * list){
 
 
 /* ===================== GET =====================*/
-NodoLista* getIndex(ListaSimpEnl * lista, int index){
+NodoLista* getIndex(ListaSimpEnl *& lista, int index){
     NodoLista* n = lista->head;
     NodoLista* temp = NULL;
     while (n != NULL) {
