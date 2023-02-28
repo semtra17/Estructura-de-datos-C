@@ -32,19 +32,22 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="ArbolAVL.cpp" />
+		<Unit filename="ArbolAVL.h" />
 		<Unit filename="ArbolBinario.cpp" />
 		<Unit filename="ArbolBinario.h" />
 		<Unit filename="Cola.cpp" />
 		<Unit filename="Cola.h" />
 		<Unit filename="Grafos.cpp" />
 		<Unit filename="Grafos.h" />
-		<Unit filename="Lista.h" />
 		<Unit filename="ListaDobleEnl.cpp" />
 		<Unit filename="ListaDobleEnl.h" />
 		<Unit filename="ListaSimpl.cpp" />
 		<Unit filename="ListaSimpl.h" />
 		<Unit filename="Pila.cpp" />
 		<Unit filename="Pila.h" />
+		<Unit filename="User.cpp" />
+		<Unit filename="User.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />

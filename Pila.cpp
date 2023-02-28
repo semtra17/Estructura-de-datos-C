@@ -3,23 +3,36 @@
 using namespace std;
 
 
-void apilar(NodoPila *&pila, void *dato){
+Pila* crearPila(int bytesSizeData){
+    Pila * pila = new Pila();
+    pila->bytesSizeData = bytesSizeData;
+    pila->nodo = NULL;
+
+    return pila;
+}
+
+
+
+void apilar(Pila *pila, void *dato){
     NodoPila* nuevo_nodo = new NodoPila();
-    nuevo_nodo->dato = dato;
-    nuevo_nodo->nextNode = pila;
-    pila = nuevo_nodo;
+    nuevo_nodo->dato = malloc(pila->bytesSizeData);
+    nuevo_nodo->nextNode = pila->nodo;
+    pila->nodo = nuevo_nodo;
     cout << "Elemento agregado a pila " << endl;
+
+    if (!nuevo_nodo->dato) {
+        delete(nuevo_nodo);
+    }
+    memcpy(nuevo_nodo->dato, dato, pila->bytesSizeData);
+
 };
 
 
-void desapilar(NodoPila *&pila, void* dato){
-    NodoPila *aux = pila;
-    dato = aux->dato;
-    pila = aux->nextNode;
-    if(pila != NULL){
-            cout << *(int*) dato << " , ";
-        }else{
-            cout << *(int*) dato<< " . ";
-        }
+void * desapilar(Pila *pila){
+    NodoPila *aux = pila->nodo;
+    void* dato = aux->dato;
+    pila->nodo = aux->nextNode;
     delete aux;
+
+    return dato;
 ;}

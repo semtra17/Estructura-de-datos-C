@@ -34,7 +34,7 @@ void mostrarArbol(Nodo *arbolB,int cont){
         for(int i=0; i<cont; i++){
             cout <<"   ";
         }
-        cout << arbolB->dato << endl;
+        if(cont > 0) cout << arbolB->dato << endl;
         mostrarArbol(arbolB->izq, cont + 1);
     }
 
@@ -130,9 +130,7 @@ void eliminarNodo(Nodo *nodoEliminar){
         destruirNodo(nodoEliminar);
     }
     else{
-        cout << "NODO HOJA A ELIMINAR" << endl;
         reemplazar(nodoEliminar, NULL);
-        cout << "me rompo aca linea 135" << endl;
         destruirNodo(nodoEliminar);
     }
 
@@ -156,21 +154,18 @@ Nodo *minimo(Nodo *arbolB ){
 void reemplazar(Nodo *arbolB, Nodo *nuevoNodo){
 
     if(arbolB->padre){
-        cout << "me rompo aca linea 159" << endl;
         //arbolB->padre hay que asignarle su nuevo hijo
         if(arbolB->padre->izq && arbolB->dato == arbolB->padre->izq->dato){
-            cout << "me rompo aca linea 162" << endl;
+
             arbolB->padre->izq = nuevoNodo;
         }
         else if(arbolB->dato == arbolB->padre->der->dato){
-        cout << "me rompo aca linea 166" << endl;
             arbolB->padre->der = nuevoNodo;
         }
 
     }
     if(nuevoNodo){
         //Procedemos a asignarle su nuevo padre
-        cout << "me rompo aca linea 173" << endl;
         nuevoNodo->padre = arbolB->padre;
     }
 }

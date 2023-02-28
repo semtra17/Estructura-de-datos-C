@@ -1,26 +1,30 @@
 #ifndef GRAFOS_H_INCLUDED
 #define GRAFOS_H_INCLUDED
 #include <stdbool.h>
-#include "ListaSimpl.h"
-struct node_vertex{
-    int vertex;
-    node_vertex * nextNode;
+#include "Cola.h"
 
+
+
+struct NodoGraph{
+    int data;
+    NodoGraph* next;
 };
-
 
 struct Graph{
-    node_vertex * list_nodes_vertex[50];
-    int n;
+    int numVertices;
+    NodoGraph ** adjLists;
 
 };
 
 
-
-Graph * crearGraph();
-void addedge(Graph* graph,int u,int v);
-void printGraph(Graph* graph);
-bool add_data_to_graph(ListaSimpEnl *,int u, int v);
+//
+Graph * createGraph(int);
+NodoGraph * createNode(int );
+void addEdge(Graph* , int , int );
+void showGraph(Graph* );
+void bfs(Graph*graph, int);
+void dfs(Graph*graph, int);
+void dfs_helper(NodoGraph** adj_list, int visited[], int v);
 
 
 

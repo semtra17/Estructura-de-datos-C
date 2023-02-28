@@ -5,14 +5,21 @@ using namespace std;
 
 
 
+
 struct NodoPila{
-    int index;
     void * dato;
     NodoPila * nextNode;
+    int bytesSizeData;
 };
 
+struct Pila{
+    NodoPila * nodo;
+    int bytesSizeData;
+};
 
-void apilar(NodoPila *&, void*);
-void desapilar(NodoPila *&pila, void*);
+Pila* crearPila(int);
+void apilar(Pila *, void*);
+void * desapilar(Pila *pila);
+
 
 #endif // PILA_H_INCLUDED
